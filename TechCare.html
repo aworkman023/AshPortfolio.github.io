@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ash Workman's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="images/favicon.ico" rel="icon" type="image/x-icon">	</head>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+							<header id="header">
+								<a href="index.html" class="logo">Ash Workman's Portfolio</a>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/ash-workman/" target="_blank" class="icon brands fa fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/aworkman023" target="_blank" class="icon brands fa fa-github"><span class="label">Github</span></a></li>
+									<li><a href="https://itch.io/profile/aworkman023" target="_blank" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
+									<li><a href="https://app.joinhandshake.com/stu/users/24408908" target="_blank" class="icon brands fa-hackerrank"><span class="label">Handshake</span></a></li>
+								</ul>
+							</header>
+
+							<!-- Content -->
+								<section  style="padding-top: 2em;">
+									<header class="main">
+										<h1>Tech.Care</h1>
+									</header>
+
+									<span class="image main"><img src="images/Tech.Care/TechCareHeader.png" alt="Tech.Care Header" /></span>
+
+									<h2>Overview</h2>
+
+									<p>In 2024, I completed a front-end development skills test for the company Coalition Technologies.  This test contained <strong>developing a webpage based on the provided design</strong> in Adobe XD and <strong>using the patient data API and Postman</strong> to display the already inputted data.
+										Using the provided materials along with HTML, CSS, and JavaScript I created the dashboard for Tech.Care, a healthcare website where patients can view their medical data.
+								
+									<hr class="major" />
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h2>Tools</h2>
+											<p>Based on the requirements, I concluded on using the tools:</p>
+											<ul>
+												<li>Visual Studio Code</li>
+												<li>HTML</li>
+												<li>CSS</li>
+												<li>JavaScript</li>
+												<li>Postman</li>
+												<li>Patient Data API</li>
+												<li>Chart.js</li>
+												<li>Adobe XD</li>
+											</ul>
+										</div>
+
+										<!-- <div class="col-4 col-12-small">
+											<h2>Team</h2>
+											<p>In our team of 5, we organized ourselves into these roles:</p>
+											<ul>
+												<li>2 UI Designers</li>
+												<li>2 Researchers</li>
+												<li>1 Mentor</li>
+											</ul>
+										</div> -->
+
+										<div class="col-6 col-12-small">
+											<h2>My Role</h2>
+											<p>As the Front-End Developer, my role contained the following:</p>
+											<ul>
+												<li>Creating the webpage inputs from scratch using the prototype/wireframe</li>
+												<li>Designing the layout and colors using the exact specifics from Adobe XD</li>
+												<li>Utilizing the API to input data from a back-end so it can be easily updated and adjusted</li>
+												<li>Comparing and adjusting my work to the prototype/wireframe design to maintain consistency</li>
+												<li>Ensuring cybersecurity by keeping the basic auth encrypted</li>
+											</ul>
+										</div>
+									</div>
+
+									<hr class="major" />
+
+									<div class="row">
+										<div class="col-8 col-12-small">
+											<h2>Chart.js</h2>
+											<p>One of the main focuses of the dashboard page was a responsive graph that adjusted for each patient depending on their specific data.  To do this, it was recommended we use Chart.js.  Chart.js is an open source JavaScript library used to make graphs and other various displays on the front end and also comes with built-in chart types and configurations.  Using this library, I was able to make a modern and responsive line graph with points that documented the blood pressure history of the patient over a period of time and displayed the current values on the key.  This process also involved many steps relating to the design of the graph, including backgroundColor, borderCapStyle, borderJoinStyle, etc.</p>
+										</div>
+
+										<div class="col-4 col-12-small">
+											<div class="col-6"><span class="image fit"><img src="images/Tech.Care/chartjs.png" alt="Announcement of MyTA winning the hackathon" /></span></div>
+										</div>
+									</div>
+									
+									<hr class="major" />
+
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h2>Problem</h2>
+											<p>While most of the dashboard was created from scratch only using the specifications and images from Adobe XD, the patent data was inputted using the provided API in order to not hard code patient information so it can easily be adjusted.  While implementing this API into the system using Postman, it was revealed this <strong>API used Basic Auth</strong>, which is a way to provide a web browser the username and password needed to show the data.  While I have used basic auth before, it has only been in personal or school projects where cybersecurity was not an issue, so I needed to <strong>find a way to not hard code the basic auth key and encrypt it myself</strong> using the proper methods.</p>
+										</div>
+
+										<div class="col-6 col-12-small">
+											<h2>Solution</h2>
+											<p>After some research and trial and error using various methods, I concluded the best way to not hard code the basic auth key and encrypt it myself was to <strong>add the const authHeaderValue and assign it 'Basic <em>encrypted username:password</em>'</strong>.  Then to get the authorization needed, use <strong>Authorization: authHeaderValue</strong>.  This method encrypts the basic auth credentials while still being able to use them to pull the necessary patient data from the API.</em></p>
+										</div>
+									</div>
+
+									<hr class="major" />
+
+									<h2>Results</h2>
+									<p>See below for the final result of this project.  Including: Screenshot of the final result.</p>
+									<div class="col-6"><span class="image fit"><img src="images/Tech.Care/Results01.png" alt="Tech.Care Dashboard" /></span></div>
+									<!-- <div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/MyTA/MyTA2.jpg" alt="Announcement of MyTA winning the hackathon" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/MyTA/MyTA3.jpg" alt="Hackathon video meeting screenshot" /></span></div>
+										</div>
+									</div> -->
+									
+									<hr class="major" />
+
+									<h2>Next Steps</h2>
+									<p>While I have completed this test, a step I would take next time is <strong>increasing responsiveness</strong>.</p>
+									<p>Although I did follow everything on the Adobe XD wireframe (including border-radius, padding, and margin pixel sizes and exact color hex codes), I wish I could have improved this design by making it more responsive.  The issue in following these exact instructions was that pixel sizes were hard-coded and made to fit only a select number of screen sizes.  It is due to this that while the webpage originally looked great on my monitor, it got squished and rearranged improperly on my laptop's screen.  I made a few minor changes mainly using @media in the CSS to resize the content boxes to make them fit evenly, but because this test was not originally built to be responsive, this only went so far.</p>
+									
+									<hr class="major" />
+
+									<h2>Learnings</h2>
+									<p>Overall, this experience taught me a lot about <strong>converting a wireframe to developed code</strong> and <strong>using an API</strong>.  This was my first major time using an API to implement back-end data to a front-end project outside of class, and it was really interesting to put my knowledge to the test.  Despite the struggles at the beginning, it was all worth it when the success of it all coming together would work and filled me with even more motivation to continue.  Because I am used to working on projects of this magnitude in a team, this experience helped me grow my skills as a developer and increased my resilience and self reliance as a coder.  Though the project has been completed, I am proud of the effort I put in and believe that it shows my skill and determination.</p>
+							
+									<span class="image main"><img src="images/Tech.Care/TechCareHeader.png" alt="Tech.Care Footer" /></span>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Search
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section> -->
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<!-- <li>
+										<span class="opener">Projects</span>
+										<ul> -->
+											<li><a href="MyTA.html">MyTA</a></li>
+											<li><a href="Noz.html">Nöz</a></li>
+											<li><a href="TechCare.html">Tech.Care</a></li>
+											<li><a href="NameGenerator.html">Name Generator</a></li>
+											<li><a href="CreatureCrusaders.html">Creature Crusaders</a></li>
+											<li><a href="TransFam.html">TransFam</a></li>
+											<li><a href="PersonalWebsite.html">Personal Website</a></li>
+											<li><a href="VanBuren.html">Van Buren</a></li>
+											<!-- <li><a href="Misc.html">Miscellaneous</a></li> -->
+										<!-- </ul>
+									</li> -->
+									<!-- <li><a href="generic.html">Generic</a></li>
+									<li><a href="elements.html">Elements</a></li> -->
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<!-- <section>
+								<header class="major">
+									<h2>Ante interdum</h2>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+								</div>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</section> -->
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>Looking to hire and want to hear more about my experince?  Have any questions about my projects?  Just want to say hi?  Contact me!</p>
+								<ul class="contact">
+									<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/ash-workman/" target="_blank">LinkedIn</a></li>
+									<li class="icon solid fa-envelope"><a href="mailto:aworkman023@gmail.com">aworkman023@gmail.com</a></li>
+									<li class="icon solid fa-phone">480-436-2528</li>
+									<li class="icon solid fa-home">Tempe, AZ</li>
+									<li class="icon solid fa-file"><a href="docs/Resume - Asher Workman.pdf" target="_blank">Resume</a></li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Ash Workman 2024. All rights reserved.  Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+					</div>
+				</div>
+
+		</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
